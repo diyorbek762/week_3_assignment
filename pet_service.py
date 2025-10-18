@@ -16,8 +16,7 @@ print('*'*40)
 while True:
    service_order = input('Enter service package(bath/trim/full): ')
    if service_order=='done':
-      print(f'Total Price: ${total:.2f}')
-      break
+     break
    elif service_order=='bath':
       price=15
    elif service_order=='trim':
@@ -36,7 +35,10 @@ print('==Service Summary==')
 print(f"Total Price: ${total:.2f}")
 if total >= 75.00:
    total_after_discount = total - 12.00
+   discount = '$ 12.00'
+   print(f'Multi-Pet Discount: {discount}')
    print(f'Price After Discounts: {total_after_discount:.2f}')
+print('Thank You for choosing our salon!')
 
 
 
